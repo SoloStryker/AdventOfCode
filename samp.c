@@ -3,22 +3,24 @@
 
 int main()
 {
-	
 	int baseNum = 0; //initialize the number we'll use to count
-	FILE *fptr;
-	
-	if ((fptr = fopen("D:\\Projects\\Programming\\input.txt","r")) == NULL)
+	FILE *numFile=fopen("D:\\Projects\\Programming\\input.txt","r");
+	if (numFile == NULL)
 	{
-		// Program exits if the file pointer returns NULL.
 		printf("Error! opening file");
-		exit(1);
-	}
+		exit(-1);
+	}	
+	int total=0;
+	int numRead;
+	while (fscanf(numFile,"%d",&numRead)==1)
+	{
+		baseNum+=numRead;
+		total++;
+	}	
 	
-	//fscanf(fptr,"%d",&addList[i]);
-	
-    printf("The result is %d\n",baseNum);
+    printf("after %d lines, The result is %d\n",total,baseNum);
 	char ch;
 	scanf("%c",&ch);
-	fclose(fptr);
+	fclose(numFile);
     return 0;
 }
