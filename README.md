@@ -1,2 +1,2 @@
 # AdventOfCode
-advent of code (day1)
+advent of code (day2)
