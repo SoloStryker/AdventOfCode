@@ -6,3 +6,5 @@
 *.obj
 *.tlog
 *.log
+*.exe
+*.obj
