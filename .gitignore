@@ -1,5 +1,8 @@
 
-.vs/AoC/v15/.suo
+*.vs
+/x64/
+/AoC/v15/
+*.suo
 *.ipch
 *.db
 *.exe

@@ -31,7 +31,7 @@ int main()
 	int solved = 0;
 	long baseNum = 0; //initialize the number we'll use to store the count
 	FILE *numFile = NULL;
-	fopen_s(&numFile,"D:\\Projects\\Programming\\AdventofCode\\input.txt","r"); //Opens input file
+	fopen_s(&numFile,"D:\\Projects\\Programming\\AdventofCode\\input_day1.txt","r"); //Opens input file
 	if (numFile == NULL)//Verifies input file exists, exits if not
 	{
 		printf("Error! opening file");

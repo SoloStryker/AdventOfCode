@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AoC.c">
+    <ClCompile Include="AoC_Day1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AoC_Day2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
